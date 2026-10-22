@@ -27,6 +27,10 @@
     paper.id = `publication-${i + 1}`;
     entries.push({ title: clean(paper.querySelector('h3').textContent), text: clean(paper.textContent), href: `#${paper.id}`, category: 'Publications' });
   });
+  document.querySelectorAll('.education-list li').forEach((item, i) => {
+    item.id = `education-${i + 1}`;
+    entries.push({ title: clean(item.querySelector('h3').textContent), text: clean(item.textContent), href: `#${item.id}`, category: 'Education' });
+  });
   document.querySelectorAll('.awards-list li, .news-list li').forEach((item, i) => {
     item.id = `entry-${i + 1}`;
     entries.push({ title: clean(item.textContent), text: clean(item.textContent), href: `#${item.id}`, category: item.closest('.news-list') ? 'News' : 'Honors/Awards' });

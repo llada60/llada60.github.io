@@ -175,7 +175,13 @@ h3 a:hover { color: var(--accent); }
 .paper-links a:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); text-decoration: none; }
 .paper-links span { font-size: 10px; margin-left: 3px; }
 
-.honors-section { margin-top: 37px; }
+.education-section, .honors-section { margin-top: 37px; }
+.education-section { font-family: Georgia, "Times New Roman", serif; }
+.education-list { list-style: none; padding: 0; margin: 18px 0 0; }
+.education-list li + li { margin-top: 22px; }
+.education-list h3 { margin-bottom: 3px; font-size: 17.5px; font-weight: 600; line-height: 1.5; }
+.education-list p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.6; }
+.education-list h3 + p { margin-bottom: 5px; color: var(--ink); font-size: 15.5px; }
 .awards-list { list-style: disc outside; padding: 0 0 0 22px; margin: 18px 0 0; }
 .awards-list li { padding: 7px 0; font-size: 16px; }
 .award-year { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
@@ -187,7 +193,7 @@ h3 a:hover { color: var(--accent); }
 
 .click-spark-canvas { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 50; pointer-events: none; user-select: none; }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   html { scroll-padding-top: 126px; }
   .header-inner { grid-template-columns: 1fr auto; gap: 5px 12px; }
   .header-tools { grid-column: 2; grid-row: 1; }
@@ -206,7 +212,7 @@ h3 a:hover { color: var(--accent); }
 @media (max-width: 480px) {
   html { scroll-padding-top: 118px; }
   .header-inner { gap: 6px; padding: 10px 16px; }
-  .gooey-nav a { font-size: 11px; padding: 5px 8px; }
+  .gooey-nav a { font-size: 10px; padding: 5px; }
   .page-shell { padding: 0 20px; }
   .about-section { padding-top: 28px; }
   h1 { font-size: 36px; }
